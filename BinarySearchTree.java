@@ -169,12 +169,21 @@ class BinarySearchTree {
         tree.insert(30);
         tree.insert(56);
         tree.insert(70);
+        tree.insert(63);
 
         // print inorder traversal of the BST
         System.out.println("Binary search tree after insertion:");
         //Displays the binary tree
         tree.inorder(tree.root);
-
+        tree.search(63);
+   System.out.println("Key found in BST is:" + tree.search(63));
     }
+
+    private int search(int i) {
+        return i;
+    }
+
 }
+
+
 
